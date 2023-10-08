@@ -1,7 +1,5 @@
-body {
-    background-color: #3F2860;
-    color: #40407A;
-    font-family: Verdana, Arial, Sans-Serif;
+.yogadoor{
+    object-position: right center;
 }
 header{
     background-image: url(lilyheader.jpg);
@@ -9,6 +7,11 @@ header{
     background-position: right;
     background-size: auto, 150px;
 
+}
+body {
+    background-color: #3F2860;
+    color: #40407A;
+    font-family: Verdana, Arial, Sans-Serif;
 }
 h1{
     background-color: #80CBC4;
