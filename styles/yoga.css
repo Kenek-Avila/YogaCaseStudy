@@ -4,6 +4,31 @@ body {
     color: #40407A;
     font-family: Verdana, Arial, Sans-Serif;
 }
+#wrapper{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #F5F5F5;
+    min-width: 1000px;
+    max-width: 1280;
+    display: grid;
+    grid-template-columns: 1f 3f;
+    grid-template-rows: 1f 3f 1f;
+    grid-template-areas:
+    "header header"
+    "nav main"
+    "footer footer";
+}
+main{
+    grid-area: main;
+    padding-left: 2em;
+    padding-right: 2em;
+    grid-template-columns: 1f 3f;
+    grid-template-rows:3f 1f;
+    grid-template-areas:
+    "image text"
+    "list ."
+}
 h1{
     background-color: #80CBC4;
     padding-top: 50px;
@@ -15,6 +40,7 @@ h1{
     background-size: auto, 150px;
 }
 nav{
+    grid-area: nav;
     text-align: center;
     font-weight: bold;
     padding: 1em;
@@ -26,29 +52,21 @@ nav a {
     font-style: italic;
 }
 footer{
+    grid-area: footer;
     background-color: #80cbc4;
     font-size: 0.60em;
     font-style: italic;
     text-align: center;
     padding: 1em;
 }
-#wrapper{
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: #F5F5F5;
-    min-width: 1000px;
-    max-width: 1280;
-
-}
-main{
-    padding-left: 2em;
-    padding-right: 2em;
-}
 img{
+    grid-area: text;
     padding-left: 1em;
     padding-right: 1em;
 }
 #hero{
     text-align: center;
+}
+header{
+    grid-area: header;
 }
