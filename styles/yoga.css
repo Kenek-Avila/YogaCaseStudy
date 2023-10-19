@@ -5,16 +5,15 @@ body {
     font-family: Verdana, Arial, Sans-Serif;
 }
 #wrapper{
-    min-width: 1200px;
-    max-width: 1480px;
+    width: 80%;
     margin-right: auto;
     margin-left: auto;
     background-color: #F5F5F5;
-    min-width: 1000px;
-    max-width: 1280;
+    min-width: 1200px;
+    max-width: 1480px;
     display: grid;
-    grid-template-columns: 1f 3f;
-    grid-template-rows: 1f 3f 1f;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 3fr 1fr;
     grid-template-areas:
     "header header"
     "nav main"
@@ -25,8 +24,8 @@ main{
     padding-left: 2em;
     padding-right: 2em;
     display: grid;
-    grid-template-columns: 1f 3f;
-    grid-template-rows:3f 1f;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows:3fr 1fr;
     grid-template-areas:
     "image text"
     "copy ."
@@ -36,8 +35,8 @@ main{
     padding-left: 2em;
     padding-right: 2em;
     display: grid;
-    grid-template-columns: 1f;
-    grid-template-rows:1f 1f;
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr 1fr;
     grid-template-areas:
     "text"
     "hero"
@@ -47,16 +46,16 @@ main{
     margin-inline-start: 40px;
     column-gap: 1em;
     display: grid;
-    grid-template-columns: 1f 1f 1f;
-    grid-template-rows:1f;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:1fr;
     grid-template-areas:
     "sec1 sec2 sec3";
 }
 .page2{
     margin-inline-start: 40px;
     display:grid;
-    grid-template-columns: 2f;
-    grid-template-rows: 1f;
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr;
     grid-template-areas:
     "sec1 sec2";
 }
