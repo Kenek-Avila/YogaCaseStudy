@@ -28,7 +28,7 @@ main{
     grid-template-rows:3fr 1fr;
     grid-template-areas:
     "image text"
-    "copy ."
+    "copy .";
 }
 .pages{
     grid-area: main;
@@ -127,6 +127,7 @@ img{
     padding-top: 2em;
     padding-right: 2em;
     padding-left: 2em;
+    padding-bottom: 0em;
 }
 #hero{
     grid-area: hero;
