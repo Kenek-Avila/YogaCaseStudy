@@ -44,8 +44,16 @@ nav{
     text-align: center;
     font-weight: bold;
     padding: 1em;
+    display: flex;
+    flex-direction: column;
+
 }
 nav a {
+    border-style: solid;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
     text-decoration: none;
 }
 .studio{
