@@ -5,7 +5,8 @@ body {
     font-family: Verdana, Arial, Sans-Serif;
 }
 #wrapper{
-    width: 80%;
+    min-width: 1200px;
+    max-width: 1480px;
     margin-right: auto;
     margin-left: auto;
     background-color: #F5F5F5;
@@ -23,21 +24,65 @@ main{
     grid-area: main;
     padding-left: 2em;
     padding-right: 2em;
+    display: grid;
     grid-template-columns: 1f 3f;
     grid-template-rows:3f 1f;
     grid-template-areas:
     "image text"
-    "list ."
+    "copy ."
+}
+.pages{
+    grid-area: main;
+    padding-left: 2em;
+    padding-right: 2em;
+    display: grid;
+    grid-template-columns: 1f;
+    grid-template-rows:1f 1f;
+    grid-template-areas:
+    "text"
+    "hero"
+}
+
+.page1{
+    margin-inline-start: 40px;
+    column-gap: 1em;
+    display: grid;
+    grid-template-columns: 1f 1f 1f;
+    grid-template-rows:1f;
+    grid-template-areas:
+    "sec1 sec2 sec3";
+}
+.page2{
+    margin-inline-start: 40px;
+    display:grid;
+    grid-template-columns: 2f;
+    grid-template-rows: 1f;
+    grid-template-areas:
+    "sec1 sec2";
+}
+.content{
+    grid-area: text;
+}
+.space{
+    margin-left: 2em;
+}
+.copy{
+    grid-area: copy;
 }
 h1{
     background-color: #80CBC4;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    margin-top: 0%;
+    padding-top: 1.7em;
+    padding-bottom: 1.7em;
     padding-left: 2em;
     background-image: url(lilyheader.jpg);
     background-repeat: no-repeat;
     background-position: right;
     background-size: auto, 150px;
+}
+h2{
+    margin-top: 0%;
+    margin-block-start: 1em;
 }
 nav{
     grid-area: nav;
@@ -49,13 +94,20 @@ nav{
 
 }
 nav a {
-    border-style: solid;
+    border-style: outset;
+
     padding-top: 1em;
     padding-bottom: 1em;
     padding-left: 3em;
     padding-right: 3em;
     text-decoration: none;
 }
+nav a:link
+ { color: #3F2860; }
+nav a:visited 
+{ color: #497777; }
+nav a:hover
+{ color: #A26100; border: 3px inset #333333; }
 .studio{
     font-style: italic;
 }
@@ -68,13 +120,33 @@ footer{
     padding: 1em;
 }
 img{
-    grid-area: text;
+    grid-area: image;
     padding-left: 1em;
-    padding-right: 1em;
+    padding-right: 0%;
+}
+#mainimg{
+    padding-top: 2em;
+    padding-right: 2em;
+    padding-left: 2em;
 }
 #hero{
+    grid-area: hero;
     text-align: center;
+    margin-top: 0px;
+    padding-right: 0%;
 }
 header{
     grid-area: header;
+}
+#sec1{
+    grid-area: sec1;
+}
+#sec2{
+    grid-area: sec2;
+}
+#sec3{
+    grid-area: sec3;
+}
+dd{
+    margin-inline-start: 0%;
 }
