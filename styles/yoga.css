@@ -33,6 +33,12 @@ nav{
     flex-wrap: wrap;
     justify-content: flex-end;
 }
+nav a:link
+ { color: #3F2860; }
+nav a:visited 
+{ color: #497777; }
+nav a:hover
+{ color: #A26100; border: 3px inset #333333; }
 .studio{
     font-style: italic;
 }
@@ -55,10 +61,18 @@ main{
     padding-right: 2em;
 }
 img{
+    grid-area: image;
     padding-left: 1em;
-    padding-right: 1em;
+    padding-right: 0%;
+}
+#mainimg{
+    padding-top: 2em;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-bottom: 0em;
 }
 #hero{
+    grid-area: hero;
     text-align: center;
     height: 300px;
     background-size: cover;
