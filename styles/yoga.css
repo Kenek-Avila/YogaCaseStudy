@@ -6,7 +6,7 @@ body {
     margin: 0;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 50px 35% 60%;
+    grid-template-rows: auto auto auto;
     grid-template-areas:
     "nav"
     "header"
@@ -32,6 +32,8 @@ nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    min-height: 40px;
+    max-height: fit-content;
 }
 nav a:link
  { color: #3F2860; }
@@ -54,7 +56,6 @@ footer{
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 1fr 1fr;
-
 }
 main{
     padding-left: 2em;
@@ -85,11 +86,46 @@ header{
     color: white;
     font-size: 90%;
 }
+.page2{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
 h1{
     margin-top: 50px;
     min-height: 200px;
     padding-left: 1em;
 }
+#sec1{
+    display:flex;
+    justify-content: center;
+}
+#sec2{
+    display:flex;
+    justify-content: center;
+}
+table{
+    border-collapse: collapse;
+    width: 60%;
+    border: 1px solid #3F2860;
+    margin-bottom: 1em;
+    text-align: center;
+    margin: 0%;
+    margin-block-end: 0%;
+}
+td, th{
+    border: 1px solid #3F2860;
+}
+tr:nth-of-type(even){
+    background-color: #DBE8E9;
+}
+caption{
+    margin: 1em;
+    font-weight: bold;
+    font-size: 120%;
+}
+
 @media only screen and (min-width: 600px) {
     nav {
         display: flex;
